@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>세이브더칠드런 서브페이지</title>
+    
+    <link rel="stylesheet" href="css/sub-style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="script/script.js"></script>
+    <script src="script/jquery-1.12.3.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="sidebar">
+            <a href="#"><img src="images/sidebar.png" alt=""></a>
+        </div>
+        <header id="header">
+            <div id="header_t">
+                <div class="inner">
+                    <ul class="clearfix">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">나의후원</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="header_b">
+                <div class="inner">
+                    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="로고"></a></div>
+                    <!-- 서브메뉴 -->
+                    <ul class="nav">
+                        <li><a href="sub.html">기관</a>
+                            <ul class="submenu">
+                                <li><a href="sub.html">세이브더칠드런 100주년</a></li>
+                                <li><a href="sub.html">세이브더칠드런 정신</a></li>
+                                <li><a href="sub.html">연혁/조직</a></li>
+                                <li><a href="sub.html">투명경영</a></li>
+                                <li><a href="sub.html">재정보고</a></li>
+                                <li><a href="sub.html">인사말</a></li>
+                                <li><a href="sub.html">홍보대사</a></li>
+                                <li><a href="sub.html">인재채용</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub.html">사업</a>
+                            <ul class="submenu">
+                                <li><a href="sub.html">해외사업</a></li>
+                                <li><a href="sub.html">국내사업</a></li>
+                                <li><a href="sub.html">권리옹호</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="sub.html">후원</a>
+                            <ul class="submenu">
+                                <li><a href="sub.html">해외결연후원</a></li>
+                                <li><a href="sub.html">정기후원</a></li>
+                                <li><a href="sub.html">기업·단체후원</a></li>
+                                <li><a href="sub.html">고액·유산기부</a></li>
+                                <li><a href="sub.html">기념일기부</a></li>
+                                <li><a href="sub.html">선물가게</a></li>
+                                <li><a href="sub.html">후원가이드</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub.html">참여</a>
+                            <ul class="submenu">
+                                <li><a href="sub.html">갬페인</a></li>
+                                <li><a href="sub.html">후원자 프로그램</a></li>
+                                <li><a href="sub.html">착한소비</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="sub.html">소식</a>
+                            <ul class="submenu">
+                                <li><a href="sub.html">나눔이야기</a></li>
+                                <li><a href="sub.html">소식지</a></li>
+                                <li><a href="sub.html">연차보고서</a></li>
+                                <li><a href="sub.html">뉴스레터</a></li>
+                                <li><a href="sub.html">동영상</a></li>
+                                <li><a href="sub.html">보고서</a></li>
+                                <li><a href="sub.html">공지/뉴스</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+
+                    <div class="donate_btn"><a href="#">후원하기</a></div>
+                    
+                    
+                    
+                     <!--모바일메뉴 햄버거버튼 슬라이드 -->
+                    <div class="menu">
+                        <a href="#"><img src="images/menu_btn.png" alt="메뉴버튼"></a>
+                    </div>
+                    <nav class="left_gnbWrap">
+                        <a href="#" class="close">close</a>
+                        <ul class="left_gnb">
+                            <li>
+                                <a href="#">기관</a>
+                                <ul>
+                                    <li><a href="sub.html">세이브더칠드런 100주년</a></li>
+                                    <li><a href="sub.html">세이브더칠드런 정신</a></li>
+                                    <li><a href="sub.html">연혁/조직</a></li>
+                                    <li><a href="sub.html">투명경영</a></li>
+                                    <li><a href="sub.html">재정보고</a></li>
+                                    <li><a href="sub.html">인사말</a></li>
+                                    <li><a href="sub.html">홍보대사</a></li>
+                                    <li><a href="sub.html">인재채용</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">사업</a>
+                                <ul>
+                                    <li><a href="#">해외사업</a></li>
+                                    <li><a href="#">국내사업</a></li>
+                                    <li><a href="#">권리옹호</a></li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">후원</a>
+                                <ul>
+                                    <li><a href="sub.html">해외결연후원</a></li>
+                                    <li><a href="sub.html">정기후원</a></li>
+                                    <li><a href="sub.html">기업·단체후원</a></li>
+                                    <li><a href="sub.html">고액·유산기부</a></li>
+                                    <li><a href="sub.html">기념일기부</a></li>
+                                    <li><a href="sub.html">선물가게</a></li>
+                                    <li><a href="sub.html">후원가이드</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">참여</a>
+                                <ul>
+                                    <li><a href="#">갬페인</a></li>
+                                    <li><a href="#">후원자 프로그램</a></li>
+                                    <li><a href="#">착한소비</a></li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">소식</a>
+                                <ul>
+                                    <li><a href="#">나눔이야기</a></li>
+                                    <li><a href="#">소식지</a></li>
+                                    <li><a href="#">연차보고서</a></li>
+                                    <li><a href="#">뉴스레터</a></li>
+                                    <li><a href="#">동영상</a></li>
+                                    <li><a href="#">보고서</a></li>
+                                    <li><a href="#">공지/뉴스</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- 로컬네비게이션 -->
+        <div id="localnav">
+            <div class="inner">
+                <div class="home_btn">
+                    <a href="#"><img src="images/home_btn.png" alt="홈버튼"></a>
+                </div>
+                <div class="subnav1">
+                    <select class="local1">
+                        <option>&nbsp;&nbsp;&nbsp;&nbsp;사업</option>
+                        <option>&nbsp;&nbsp;&nbsp;&nbsp;후원</option>
+                        <option>&nbsp;&nbsp;&nbsp;&nbsp;참여</option>
+                        <option>&nbsp;&nbsp;&nbsp;&nbsp;소식</option>
+                    </select>
+                </div>
+                <div class="subnav2">
+                    <select class="local2">
+                        <option>&nbsp;&nbsp;&nbsp;&nbsp;후원</option>
+                        <option>&nbsp;&nbsp;&nbsp;&nbsp;해외결연후원</option>
+                        <option>&nbsp;&nbsp;&nbsp;&nbsp;정기후원</option>
+                        <option>&nbsp;&nbsp;&nbsp;&nbsp;기업단체후원</option>
+                        <option>&nbsp;&nbsp;&nbsp;&nbsp;고액유산기부</option>
+                        <option>&nbsp;&nbsp;&nbsp;&nbsp;기념일기부</option>
+                        <option>&nbsp;&nbsp;&nbsp;&nbsp;선물가게</option>
+                        <option>&nbsp;&nbsp;&nbsp;&nbsp;후원가이드</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+        <!-- //상단  -->
+
+        <!-- 컨텐츠 -->
+        <div id="container">
+            <div class="inner">
+                <section class="con1">
+                    <h2>정기후원</h2>
+                    <ul class="menu_bar clearfix">
+                        <li><a href="#">일반후원</a></li>
+                        <li><a href="#">해외후원</a></li>
+                        <li><a href="#">국내후원</a></li>
+                        <li><a href="#">긴급구호/인도적지원</a></li>
+                    </ul>
+
+                    <div class="menu_drop">
+                        <select>
+                            <option>일반후원</option>
+                            <option>해외후원</option>
+                            <option>국내후원</option>
+                            <option>긴급구호/인도적지원</option>
+                        </select>
+
+                    </div>
+                    <div class="regular_banner">
+
+                        <h3>일반후원</h3>
+                        <p>일반후원은 세이브더칠드런의 모든 사업과 활동 중,<br>가장긴급하게 필요한 곳에 사용됩니다.
+                        </p>
+                    </div>
+                    <div class="donate_slide clearfix">
+                        <div class="arr_l">
+                            <a href="#">
+                                <img src="images/prev_btn.png" alt="이전">
+                            </a>
+                        </div>
+                        <div class="slidebox">
+                            <div class="do_slidelist">
+                                <img src="images/donateimg1.jpg" alt="일반후원이미지1">
+                                <p>지진, 홍수, 가뭄, 기근 등의 자연재해나 무력분쟁 등
+                                    전 세계 주요 긴급구호 현장에서 인도적지원 활동을 펼칩니다.</p>
+                            </div>
+                            <div class="do_slidelist">
+                                <img src="images/donateimg2.jpg" alt="일반후원이미지2">
+                                <p>
+                                    인종, 종교, 정치적 이념을 초월하여 위기에 처한 아동의 생존과 안전을 위한 프로그램을 운영합니다.</p>
+                            </div>
+                            <div class="do_slidelist">
+                                <img src="images/donateimg3.jpg" alt="일반후원이미지3">
+                                <p>국내 아동들을 빈곤, 학대, 차별 등의 위험에서 보호
+                                    하고 건강하게 자랄 수 있도록 돕습니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="arr_r">
+                            <a href="#">
+                                <img src="images/next_btn.png" alt="이후">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="con2">
+                <div class="inner">
+                    <div class="donator_txt">
+                        <h2>후원자가 되시면</h2>
+                        <p>
+                            후원자카드, 연차보고서 제공 및 기부금 세액공제 혜택을 드립니다.</p>
+                    </div>
+                    <div class="donatorslide clearfix">
+                        <div class="donatorlist">
+                            <img src="images/d_icon1.png" alt="후원자이미지1">
+                            <h3>환영편지와 후원자카드 발송</h3>
+                            <p>아동을 구하는 일에 함께하기로 결심한 후원자님을 환영하며 세이브더칠드런 후원자카드를 보내드립니다.</p>
+                        </div>
+                        <div class="donatorlist">
+                            <img src="images/d_icon2.png" alt="후원자이미지1">
+                            <h3>후원감사선물 발송</h3>
+                            <p>후원 약속을 잊지않고 꾸준히 지켜주신 후원자님께 감사의 마음을 담은 기념품을 보내드립니다.</p>
+                        </div>
+                        <div class="donatorlist">
+                            <img src="images/d_icon3.png" alt="후원자이미지1">
+                            <h3>소식지 및 연차보고서</h3>
+                            <p>분기별 세이브더칠드런의 활동에 대한 소식지와 한 해 동안 사업자소식과 재정 보고를 담은 연차보고서를 드립니다.</p>
+                        </div>
+                        <div class="donatorlist">
+                            <img src="images/d_icon4.png" alt="후원자이미지1">
+                            <h3>프로그램 참여</h3>
+                            <p>후원자 만남의 날, 아동권리 부모교육 등 다양한 프로그램 참여 기회를 제공해 드립니다.</p>
+                        </div>
+                    </div>
+                    <div class="under_btn">
+                        <img src="images/under_btn.png" alt="">
+                    </div>
+                    <ul class="d_notice">
+                        <li>우편발송물은 우편 신청자에 한해 보내드립니다. 마이페이지에서 주소를 꼭 입력해 주세요!</li>
+                        <li>기부금영수증 발급: 기부금액 1천만원 이하 15%, 1천만원 초과 30%까지 연말정산 시 세액공제 혜택을 받으실 수 있습니다.</li>
+                    </ul>
+
+                </div>
+            </section>
+            <section class="con3">
+                <div class="inner clearfix">
+                    <div class="d_bannertxt">
+                        <h2>월 3만원의 정기후원으로, 연간 24명의 신생아가<br>안전하게 태어날 수 있도록 도울 수 있습니다.</h2>
+                    </div>
+
+                    <div class="price_box">
+                        <ul class="clearfix">
+                            <li><a href="#">월 2만원</a></li>
+                            <li><a href="#">월 3만원</a></li>
+                            <li><a href="#">월 5만원</a></li>
+                            <li><a href="#">월 10만원</a></li>
+                            <li><a href="#">직접입력</a></li>
+                        </ul>
+                    </div>
+                    <div class="d_box">
+                        <a href="#">후원하기</a>
+                    </div>
+                </div>
+
+            </section>
+            <section class="con4">
+                <div class="prev_arr">
+                    <a href="#"><img src="images/prev_btn.png" alt=""></a>
+                </div>
+                <div class="next_arr">
+                    <a href="#"><img src="images/next_btn.png" alt=""></a>
+                </div>
+                <div class="inner">
+                    <div class="ambassadors clearfix">
+                        <div class="amb_list">
+                            <img src="images/people1.jpg" alt="">
+                            <p>홍보대사로 활동하면서 함께한 아이들은, 제가 도운 것보다<br>
+                                제게 더 큰 기쁨이 되었고 행복이 되었습니다.<br>
+                                여러분들께서도 작은 나눔으로<br>
+                                큰 행복을 경험하실 수 있으면 좋겠습니다.
+
+                            </p>
+                            <span>13년 차 홍보대사 박경림</span>
+
+                        </div>
+                        <div class="amb_list">
+                            <img src="images/peeple2.jpg" alt="">
+                            <p>세이브더칠드런이 제일 마음에 들었던 점은 아동에 초점이<br>
+                                맞춰져 있다는 거였어요. 아이들은 스스로 선택해서<br>
+                                태어난 게 아니잖아요. 특히, 소외된 계층에서 태어난<br>아이들은 기본적으로 누려야 할 기회를 박탈당한 거니까요.
+
+                            </p>
+                            <span>야밤의 공대생 만화(야공만)'를 그리는 맹기완 후원자</span>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="con5">
+                <div class="inner">
+                    <div class="q_txt">
+                        <h2>후원문의</h2>
+                        <p>후원과 관련하여 궁금하신 점은<br>아래 문의하기 또는 전화로 문의해주세요!</p>
+                    </div>
+                    <div class="q_list clearfix">
+                        <div class="q_slide">
+                            <a href="">
+                                <img src="images/q_icon1.png" alt="자주하는 질문">
+                                <span>자주하는 질문</span>
+                            </a>
+                        </div>
+                        <div class="q_slide">
+                            <a href="">
+                                <img src="images/q_icon2.png" alt="자주하는 질문">
+                                <span>문의하기</span>
+                            </a>
+                        </div>
+                        <div class="q_slide">
+                            <a href="">
+                                <img src="images/q_icon3.png" alt="자주하는 질문">
+                                <span>02-2900-4400</span>
+
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer id="footer">
+            <div id="footer_t">
+                <div class="inner" class="clearfix">
+                    <ul class="f_menu">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이메일 집단수집거부</a></li>
+                        <li><a href="#">인재채용</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                    </ul>
+                    <div class="site">
+                        <div class="globalsite">
+                            <select>
+                                <option>&nbsp;&nbsp;&nbsp;&nbsp;Save the Children</option>
+                                <option>&nbsp;&nbsp;&nbsp;&nbsp;Korea</option>
+                                <option>&nbsp;&nbsp;&nbsp;&nbsp;United states</option>
+                                <option>&nbsp;&nbsp;&nbsp;&nbsp;United Kingdom</option>
+                                <option>&nbsp;&nbsp;&nbsp;&nbsp;Japan</option>
+                                <option>&nbsp;&nbsp;&nbsp;&nbsp;Iceland</option>
+                            </select>
+                        </div>
+                        <div class="familysite">
+                            <select>
+                                <option>&nbsp;&nbsp;&nbsp;&nbsp;Family Site</option>
+                                <option>&nbsp;&nbsp;&nbsp;&nbsp;지부</option>
+                                <option>&nbsp;&nbsp;&nbsp;&nbsp;복지관</option>
+                                <option>&nbsp;&nbsp;&nbsp;&nbsp;지역아동센터</option>
+                                <option>&nbsp;&nbsp;&nbsp;&nbsp;아동보호전문기관</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer_b">
+                <div class="inner" class="clearfix">
+                    <div class="site">
+                        <div class="globalsite">
+                            <select>
+                                <option>&nbsp;&nbsp;&nbsp;&nbsp;Save the Children</option>
+                                <option>&nbsp;&nbsp;&nbsp;&nbsp;Korea</option>
+                                <option>&nbsp;&nbsp;&nbsp;&nbsp;United states</option>
+                                <option>&nbsp;&nbsp;&nbsp;&nbsp;United Kingdom</option>
+                                <option>&nbsp;&nbsp;&nbsp;&nbsp;Japan</option>
+                                <option>&nbsp;&nbsp;&nbsp;&nbsp;Iceland</option>
+                            </select>
+                        </div>
+                        <div class="familysite">
+                            <select>
+                                <option>&nbsp;&nbsp;&nbsp;&nbsp;Family Site</option>
+                                <option>&nbsp;&nbsp;&nbsp;&nbsp;지부</option>
+                                <option>&nbsp;&nbsp;&nbsp;&nbsp;복지관</option>
+                                <option>&nbsp;&nbsp;&nbsp;&nbsp;지역아동센터</option>
+                                <option>&nbsp;&nbsp;&nbsp;&nbsp;아동보호전문기관</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="footer_l">
+                        <ul class="info">
+                            <li>세이브더칠드런코리아 (우)04080 서울특별시 마포구 토정로 174</li>
+                            <li>대표전화 02-6900-4400 팩스 02-6900-4499</li>
+                            <li>대표자 오준사업자번호 105-82-03569</li>
+                        </ul>
+                        <div class="copy">
+                            Copyright © Save the Children Korea All Rights Reserved.
+                        </div>
+                    </div>
+                    <div class="footer_r">
+                        <div class="sns">
+                            <ul class="clearfix">
+                                <li><a href="#"><img src="images/sns1.png" alt="블로그"></a></li>
+                                <li><a href="#"><img src="images/sns2.png" alt="페이스북"></a></li>
+                                <li><a href="#"><img src="images/sns3.png" alt="인스타그램"></a></li>
+                                <li><a href="#"><img src="images/sns4.png" alt="트위터"></a></li>
+                                <li><a href="#"><img src="images/sns5.png" alt="유튜브"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+    </div>
+</body></html>

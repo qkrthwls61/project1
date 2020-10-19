@@ -1,0 +1,1086 @@
+/* 로컬네비게이션 */
+html{font-family: 'Noto Sans KR', sans-serif;}
+#localnav {
+    width: 100%;
+    height: 50px;
+    background: #3e3e40;
+    margin-top: 112px;
+    position: fixed;
+    z-index: 1;
+    border-top: 5px solid #da281f;
+
+}
+
+#localnav .inner .home_btn {
+    float: left;
+    margin-top: 15px;
+}
+
+.subnav1 {
+    margin-left: 50px;
+}
+
+.subnav1 .local1 {
+    width: 200px;
+    height: 50px;
+    border: none;
+    display: block;
+    float: left;
+    background: #3e3e40;
+    color: #fff;
+    border-left: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.subnav2 .local2 {
+    width: 200px;
+    height: 50px;
+    border: none;
+    display: block;
+    background: #3e3e40;
+    color: #fff;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.menu{
+    display: none;
+}
+#container {
+    padding-top: 172px;
+}
+
+#container .inner .con1 {
+    width: 100%;
+    height: 820px;
+}
+
+#container .inner .con1 h2 {
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 60px;
+}
+
+.menu_bar {
+    margin-top: 30px;
+}
+
+.menu_bar li {
+    width: 300px;
+    height: 55px;
+    background: #fafafa;
+    float: left;
+}
+
+.menu_bar li a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 55px;
+    text-align: center;
+}
+
+.menu_bar li a:hover {
+    background: #da281f;
+    color: #fff;
+}
+
+.menu_drop {
+    width: 100%;
+    height: 55px;
+    display: none;
+}
+
+.menu_drop select {
+    width: 100%;
+    height: 55px;
+    border: none;
+    background: #da281f;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding-left: 47px;
+}
+
+.regular_banner {
+    width: 1200px;
+    height: 223px;
+    background-image: url(../images/regular_donate.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 22px;
+    position: relative;
+}
+
+.regular_banner h3 {
+    font-size: 2.5rem;
+    position: absolute;
+    top: 50px;
+    right: 20%;
+}
+
+.regular_banner p {
+    font-size: 1.9rem;
+    font-weight: 500;
+    position: absolute;
+    top: 110px;
+    right: 80px;
+    ;
+    line-height: 35px;
+}
+
+.donate_slide {
+    width: 100%;
+    height: 290px;
+    margin-top: 30px;
+}
+
+.donate_slide .do_slidelist {
+    float: left;
+    width: 356px;
+    padding-right: 60px;
+}
+
+.donate_slide .do_slidelist:last-child {
+    padding-right: 0;
+}
+
+.donate_slide .do_slidelist p {
+    font-size: 1.5rem;
+    padding-left: 5px;
+    margin-top: 20px;
+}
+
+.con2 {
+    width: 100%;
+    height: 700px;
+    background-color: #fafafc;
+}
+
+.con2 .inner h2 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.con2 .inner p {
+    font-size: 1.6rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.donatorslide {
+    padding-top: 50px;
+}
+.arr_l{
+    display: none;
+}
+.arr_r{
+    display: none;
+}
+.donatorlist {
+    width: 281px;
+    height: 250px;
+    background: #fff;
+    border: 4px solid #ccc;
+    text-align: center;
+    float: left;
+    margin-right: 14px;
+}
+
+.donatorlist:last-child {
+    margin-right: 0;
+}
+
+.donatorlist img {
+    padding-top: 30px;
+}
+
+.donatorlist h3 {
+    font-size: 1.7rem;
+    padding-top: 25px;
+}
+
+.donatorlist p {
+    font-size: 1.2rem;
+    line-height: 20px;
+    padding: 0 5px;
+}
+
+.under_btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.d_notice {
+    margin-top: 20px;
+}
+
+.d_notice li {
+    list-style: disc;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+/* 월 3만원 후원 배너 */
+.con3 {
+    width: 100%;
+    height: 200px;
+    background-image: url(../images/donate_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.d_bannertxt {
+    float: left;
+}
+
+.d_bannertxt h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding-left: 220px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+
+}
+
+.price_box {
+    float: left;
+    margin-left: 210px;
+}
+
+.price_box ul {
+    width: 500px;
+}
+
+.price_box ul li {
+    width: 20%;
+    height: 46px;
+    background-color: #fff;
+    float: left;
+}
+
+.price_box ul li a {
+    font-size: 1.3rem;
+    color: #999;
+    text-align: center;
+    line-height: 46px;
+    border: 1px solid #ccc;
+}
+
+.price_box ul li a:hover {
+    border: 2px solid #da281f;
+    color: #da281f;
+}
+
+.d_box {
+    width: 120px;
+    height: 50px;
+    background: #da281f;
+    float: left;
+    margin-left: 50px;
+
+}
+
+.d_box a {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+.d_box a:hover {
+    font-weight: bold;
+}
+
+
+/* 홍보대사 */
+.con4 {
+    height: 777px;
+    position: relative;
+}
+
+.con4 .prev_arr {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    display: none;
+}
+
+.con4 .next_arr {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    display: none;
+}
+
+.ambassadors {
+    padding-top: 130px;
+}
+
+.amb_list {
+    width: 508px;
+    height: 530px;
+    background: #fff;
+    box-shadow: 2px 0 8px rgba(0, 1, 1, 0.09);
+    float: left;
+    margin-right: 160px;
+
+}
+
+.amb_list:last-child {
+    margin-right: 0;
+}
+
+.amb_list p {
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 20px 50px;
+}
+
+.amb_list span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4972c5;
+    padding-left: 50px;
+}
+
+/* 후원문의 */
+.con5 {
+    width: 100%;
+    height: 388px;
+    background-image: url(../images/q_banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 120px;
+}
+
+.con5 h2 {
+    padding-top: 70px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.con5 p {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 30px;
+    line-height: 30px;
+}
+
+.con5 .q_list {
+    margin-top: 50px;
+    display: inline-block;
+    margin-left: 20%
+}
+
+.q_list .q_slide {
+    float: left;
+    padding-right: 55px;
+    line-height: 86px;
+}
+
+.q_list .q_slide img {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.q_list .q_slide span {
+    font-weight: bold;
+    font-size: 2rem;
+    width: 50px;
+}
+
+/*.con5 .q_list ul li{
+    float: left;
+    width: 33.3%;
+    height: 86px;
+    line-height: 86px;
+}*/
+
+
+
+
+
+/*  태블릿 버전 */
+@media (max-width:1279px) {
+    #wrap {
+        width: 100%;
+    }
+
+    #localnav {
+        margin-top: 76px;
+        width: 100%;
+    }
+
+    #sidebar {
+        right: 80px;
+    }
+
+    #sidebar img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #header {
+        width: 100%;
+        height: auto
+    }
+
+    #header_t {
+        display: none
+    }
+
+    .inner {
+        width: 98%;
+        margin: 0 auto;
+    }
+
+    #header_b > .inner > .logo img {
+        width: 70%;
+        height: 70%;
+        margin-top: 20px;
+    }
+
+    #header_b > .inner > .nav {
+        display: none
+    }
+
+    #header_b > .inner > .donate_btn {
+        display: none;
+    }
+
+    #header_b > .inner > .donate_btn > a {
+        font-size: 1.3rem;
+    }
+
+    .subnav1 .local1 {
+        width: 40%
+    }
+
+    .subnav2 .local2 {
+        width: 40%
+    }
+
+       
+    
+/* 태블릿 햄버거 버튼 */
+
+    .gnbWrap {
+        padding-top: 10px;
+        padding-bottom: 8px;
+        width: 890px;
+        margin: 0 auto;
+    }
+
+    .gnbWrap > img {
+        width: 250px;
+        height: 42px;
+    }
+
+    /* 모바일 메뉴 버튼 */
+    .menu {
+        position: absolute;
+        top: 10%;
+        right: 1%;
+        transform: translateY(-50%);
+        display: block;
+         margin-top: 30px;
+    }
+
+    .menu > a {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    a.close {
+        background-color: #333;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #fff;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .left_gnbWrap {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        right: -200px;
+        top: 0;
+        background-color: #fff;
+        padding-top: 50px;
+        z-index: 999;
+        transition: all 0.3s;
+        display: block;
+    }
+
+    .left_gnbWrap.on {
+        right: 0;
+    }
+
+    .left_gnb > li {
+        width: 100%;
+    }
+
+    .left_gnb > li > a {
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        width: 100%;
+        height: 50px;
+        background-color: #da281f;
+        color: #fff;
+        font-size: 1.4em;
+    }
+
+    .left_gnb > li > a.on {
+        background-color:  #f5545a;
+    }
+
+    .left_gnb > li > ul {
+        display: none;
+    }
+
+    .left_gnb > li > ul > li > a {
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        width: 100%;
+        height: 50px;
+        background-color: #fee1db;
+        color: black;
+        font-size: 1.2em;
+    }
+    .left_gnb > li > ul > li > a:hover{
+        background-color: #f77c7e;
+        color: #fff;
+    }
+
+    
+    
+    #container {
+        padding-top: 112px;
+    }
+
+    #container .inner .con1 {
+        height: 900px; 
+    }
+
+    .menu_bar {
+        display: none;
+    }
+
+    .menu_drop {
+        display: block;
+        padding: 30px 0;
+
+
+    }
+
+    .menu_drop select {
+        width: 100%;
+        height: 55px;
+        border: none;
+        background: #da281f;
+        color: #fff;
+        font-size: 1.7rem;
+        font-weight: bold;
+        padding-left: 47px;
+    }
+
+    .menu_drop select option {
+        background: #fff;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .regular_banner {
+        width: 90%;
+        height: 0;
+        background-image: url(../images/regular_donate.jpg);
+        padding-top: calc(223/1183*100%);
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+
+    .regular_banner h3{
+        top: 40px;
+    }
+    .regular_banner p {
+        font-size: 1.5rem;
+        top: 90px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .donate_slide {
+        margin: 0 auto;
+        position: relative;
+    }
+    .arr_l{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+    .arr_l img{
+        width: 100%;
+    }
+    .arr_r{
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0
+    }
+
+    .donate_slide .do_slidelist {
+        float: none;
+        width: 80%;
+        margin: 0 auto;
+        padding-right: 0;
+
+    }
+
+    .donate_slide .do_slidelist img {
+        width: 100%;
+        background-image: url(../images/con1_p.jpg);
+        background-size: cover;
+        padding-top: calc(226/529*100%);
+        height: 0;
+        margin: 0 auto;
+    }
+
+    .do_slidelist:nth-child(2) {
+        display: none;
+    }
+    
+
+    .do_slidelist:nth-child(3) {
+        display: none;
+        float: none;
+    }
+
+    .donate_slide .do_slidelist p {
+        padding: 0 30px;
+        margin-bottom: 70px;
+    }
+
+    .con2 {
+        height: auto
+    }
+    
+    .donatorslide{
+        margin: 0 auto;
+    }
+    .donatorlist {
+ 
+        margin: 0 auto;
+        margin-bottom: 45px;
+    }
+
+    .donatorlist:last-child {
+    
+    }
+
+    .d_notice {
+        text-align: center;
+        padding-bottom: 70px;
+    }
+
+    .con3 {
+        width: 100%;
+        height: 0px;
+        background-image: url(../images/month_d.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: calc(557/768*100%);
+        position: relative;
+    }
+    .con3 .inner{
+        position: absolute;
+        top: 0;
+    }
+    .d_bannertxt {
+        float: none;
+    }
+
+    .d_bannertxt h2 {
+        padding-left: 0;
+        margin: 0 auto;
+        padding-top: 55px;
+    }
+
+    .price_box {
+        float: none;
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .price_box ul {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .d_box {
+        margin: 0 auto;
+        float: none;
+        margin-top: 50px;
+    }
+/* 홍보대사 */
+    .ambassadors{
+        height: auto;
+    }
+    .amb_list {
+        width:40%;
+
+        margin: 0 auto;
+        float: none;
+    }
+
+    .amb_list img {
+        width: 100%;
+    }
+    .con4 .prev_arr {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    display: block;
+}
+
+    .con4 .next_arr {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    display: block;
+}
+
+
+    .amb_list:last-child {
+        display: none;
+    }
+
+    .con5 {
+        height: 681px;
+    }
+
+    .con5 .q_list {
+        margin-left: 25%;
+    }
+
+    .q_list .q_slide {
+        float: none;
+        padding-right: 0;
+
+    }
+
+    .q_list .q_slide img {
+        width: 70px;
+    }
+}
+
+
+/*  태블릿 버전2 */
+@media (max-width:1179px) {
+    .donatorslide{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .donatorlist{
+        margin: 0 auto;
+       margin: 10px 20px;
+    }
+}
+
+
+
+
+
+/*  모바일 버전 */
+
+@media (max-width:768px) {
+    #wrap {
+        width: 100%;
+    }
+
+    #localnav {
+        margin-top: 76px;
+        width: 100%;
+    }
+
+    #sidebar {
+        right: 80px;
+    }
+
+    #sidebar img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #header {
+        width: 100%;
+        height: auto
+    }
+
+    #header_t {
+        display: none
+    }
+
+    .inner {
+        width: 98%;
+        margin: 0 auto;
+    }
+
+    #header_b > .inner > .logo img {
+        width: 70%;
+        height: 70%;
+        margin-top: 20px;
+    }
+
+    #header_b > .inner > .nav {
+        display: none
+    }
+
+    #header_b > .inner > .donate_btn {
+        display: none;
+    }
+
+    #header_b > .inner > .donate_btn > a {
+        font-size: 1.3rem;
+    }
+
+    .subnav1 .local1 {
+        width: 40%
+    }
+
+    .subnav2 .local2 {
+        width: 40%
+    }
+
+    .menu_btn {
+        display: block;
+        float: right;
+        margin-top: 25px;
+    }
+
+    #container {
+        padding-top: 112px;
+    }
+
+    #container .inner .con1 {
+        height: 900px;
+    }
+
+    .menu_bar {
+        display: none;
+    }
+
+    .menu_drop {
+        display: block;
+        padding: 30px 0;
+
+
+    }
+
+    .menu_drop select {
+        width: 100%;
+        height: 55px;
+        border: none;
+        background: #da281f;
+        color: #fff;
+        font-size: 1.7rem;
+        font-weight: bold;
+        padding-left: 47px;
+    }
+
+    .menu_drop select option {
+        background: #fff;
+        font-weight: bold;
+        color: #333;
+    }
+
+    /*  일반 후원 con1 */
+    .regular_banner {
+        width: 90%;
+        height: 0;
+        background-image: url(../images/mo_b.jpg);
+        padding-top: calc(405/618*100%);
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+
+    .regular_banner h3 {
+        display: none;
+    }
+
+    .regular_banner p {
+        display: none;
+    }
+
+    .donate_slide {
+        margin: 0 auto;
+        position: relative;
+    }
+    .arr_l{
+        display: block;
+        position: absolute;
+        top: 30%;
+        left: 0;
+    }
+    .arr_l img{
+        width: 70%;
+    }
+    .arr_r{
+        display: block;
+        position: absolute;
+        top: 30%;
+        right: 0
+    }
+     .arr_r img{
+        width: 70%;
+    }
+    .donate_slide .do_slidelist {
+        float: none;
+        width: 80%;
+        margin: 0 auto;
+        padding-right: 0;
+
+    }
+    .donate_slide .do_slidelist img {
+        width: 100%;
+        background-image: url(../images/con1_p.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding-top: calc(226/529*100%);
+        height: 0;
+        margin: 0 auto;
+    }
+    .donate_slide .do_slidelist:first-child img{
+      
+    }
+    .do_slidelist:nth-child(2) {
+        display: none;
+    }
+
+    .do_slidelist:nth-child(3) {
+        display: none;
+    }
+
+    .donate_slide .do_slidelist p {
+        padding: 0 30px;
+        margin-bottom: 70px;
+    }
+    
+/*  후원자가 되시면 */
+    .con2 {
+        margin-top: 50px;
+    }
+
+    .donatorlist {
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 45px;
+    }
+
+    .donatorlist:last-child {
+        margin: 0 auto;
+    }
+
+    .d_notice {
+        text-align: center;
+    }
+/* 월 3만원 정기후원 */
+    .con3 {
+        width: 100%;
+        height: 0px;
+        background-image: url(../images/month_d.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: calc(557/768*100%);
+        position: relative
+    }
+    .con3 .inner{
+        position: absolute;
+        top: 0;
+    }
+    .d_bannertxt {
+        float: none;
+    }
+
+    .d_bannertxt h2 {
+        padding-left: 0;
+        padding-top: 55px;
+        margin: 0 auto;
+    }
+
+    .price_box {
+        float: none;
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .price_box ul {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .d_box {
+        margin: 0 auto;
+        margin-top: 50px;
+        float: none;
+    }
+    
+/* 홍보대사 */
+    .amb_list {
+        width: 70%;
+        margin: 0 auto;
+        float: none;
+    }
+
+    .amb_list img {
+        width: 100%;
+    }
+
+    .amb_list:last-child {
+        display: none;
+    }
+    .con4 .prev_arr img{
+        width: 70%;
+       
+    }
+    .con4 .next_arr img{
+        width: 70%;
+      
+    }
+/* 후원 문의 */
+    .con5 {
+        height: 681px;
+    }
+
+    .con5 .q_list {
+        margin-left: 25%;
+    }
+
+    .q_list .q_slide {
+        float: none;
+        padding-right: 0;
+
+    }
+
+    .q_list .q_slide img {
+        width: 70px;
+    }
+    .site{
+        display: block;
+    }
+}

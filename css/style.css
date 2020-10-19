@@ -1,0 +1,1691 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+html {
+    font-size: 10px;
+}
+
+#wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.inner {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+#body{
+    overflow-x: hidden;
+}
+/*스크롤효과*/
+.fadein {
+    opacity: 0;
+    margin-bottom: -200px;
+    max-height: 100%;
+}
+
+/* 사이드바 */
+#sidebar {
+    position: fixed;
+    top: 80%;
+    right: 5%;
+    z-index: 1000;
+}
+
+#sidebar img {
+    width: 80%;
+}
+
+/* 상단 */
+#header {
+    width: 100%;
+    height: 112px;
+    position: fixed;
+    top: 0;
+    z-index: 500;
+}
+
+#header_t {
+    height: 36px;
+    background: #fafafc
+}
+
+#header_t > .inner > ul {
+    float: right;
+}
+
+#header_t > .inner > ul > li {
+    float: left;
+    width: 50px;
+    margin-left: 40px;
+
+
+}
+
+#header_t > .inner > ul > li > a {
+    color: #333;
+    line-height: 36px;
+    text-align: center;
+    font-size: 12px;
+}
+
+#header_b {
+    height: 76px;
+    background: #fff;
+
+}
+
+#header_b > .inner > .logo {
+    float: left
+}
+
+#header_b > .inner > .logo img {
+    margin-top: 15px;
+}
+
+#header_b > .inner > .nav {
+    float: left;
+    width: 675px;
+    height: 76px;
+    margin-left: 64px
+}
+
+#header_b > .inner > .nav > li {
+    float: left;
+    width: 135px;
+    text-align: center;
+    line-height: 76px;
+    position: relative;
+}
+
+#header_b > .inner > .nav > li > a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#header_b > .inner > .nav > li:hover {
+    text-decoration: underline;
+    text-decoration-color: #da281f;
+    z-index: 500
+}
+
+/* 서브메뉴 */
+.submenu {
+    width: 100%;
+    height: 250px;
+    background: #fff;
+    position: absolute;
+    top: 78px;
+    z-index: 1;
+    padding-top: 5px;
+    display: none;
+    z-index: 1;
+}
+
+.submenu li {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 1.2rem;
+    color: #888;
+}
+
+.submenu li:hover .submenu {
+    display: block;
+}
+
+.submenu li a:hover {
+    font-weight: bold;
+    color: #da281f
+}
+
+#header_b > .inner > .donate_btn {
+    float: left;
+    width: 145px;
+    height: 50px;
+    text-align: center;
+    background: #da281f;
+    margin-top: 13px;
+    margin-left: 93px;
+}
+
+#header_b > .inner > .donate_btn > a {
+    font-size: 2.5rem;
+    line-height: 50px;
+    color: #fff;
+}
+
+
+
+/* 모바일 햄버거 버튼 */
+.menu {
+    display: none;
+}
+
+.left_gnbWrap {
+    display: none;
+}
+
+/* 메인이미지*/
+#mainimg {
+    width: 100%;
+    height: 583px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 112px;
+}
+
+#mainimg img {
+    width: 100%;
+}
+
+#mainimg .prev_btn {
+    position: absolute;
+    top: 40%;
+    left: 2%
+}
+
+#mainimg .next_btn {
+    position: absolute;
+    top: 40%;
+    right: 2%
+}
+
+
+/* 모바일 메인이미지 */
+
+.slide2 {
+    display: none;
+}
+
+/* 메인이미지 플레이버튼 */
+.playlist {
+    position: absolute;
+    bottom: 30%;
+    left: 45%;
+}
+
+.playlist ul li {
+    float: left;
+    padding: 5px;
+    opacity: 0.6;
+}
+
+playlist ul li a :hover {
+    opacity: 0;
+}
+
+
+
+
+/* 컨텐츠 */
+#contents {
+    width: 100%;
+    height: 3334px;
+    /*    padding-top: 112px*/
+}
+
+/* 후원 캠페인 */
+#campaign {
+    height: 600px;
+    margin-top: 80px;
+}
+
+#campaign > .inner {
+    position: relative
+}
+
+#campaign .plus_btn {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+
+}
+
+#campaign .campaigntext {
+    text-align: center
+}
+
+#campaign .campaigntext h2 {
+    font-size: 3rem;
+}
+
+#campaign .campaigntext p {
+    font-size: 1.6rem;
+    padding-top: 20px;
+    font-weight: 500
+}
+
+#campaign .campaignlist {
+    width: 1180px;
+    height: 340px;
+}
+
+.campaignimg1,
+.campaignimg2,
+.campaignimg3,
+.campaignimg4 {
+    width: 279px;
+    height: 340px;
+    float: left;
+    position: relative;
+    margin: 50px 8px;
+    overflow: hidden;
+
+}
+
+.campaignimg1:hover div {
+    transform: translate(0, 0)
+}
+
+/* 호버 효과 - 이미지1  */
+.campaignimg1 .camp_box1 {
+    width: 279px;
+    height: 340px;
+    position: absolute;
+    top: 0px;
+    color: #fff;
+    background: rgba(218, 40, 31, 0.5);
+    padding-top: 85%;
+    padding-left: 15px;
+    transform: translate(300px, 0);
+    transition: all 0.6s;
+}
+
+.campaignimg1 .camp_box1 .line {
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+.camp_box1 h3 {
+    font-size: 1.8rem;
+}
+
+.camp_box1 p {
+    font-size: 1.4rem;
+    padding-top: 10px;
+}
+
+/* 호버 효과 - 이미지2  */
+.campaignimg2:hover div {
+    transform: translate(0, 0)
+}
+
+.campaignimg2 .camp_box2 {
+    width: 279px;
+    height: 340px;
+    position: absolute;
+    top: 0px;
+    color: #fff;
+    background: rgba(218, 40, 31, 0.5);
+    padding-top: 85%;
+    padding-left: 15px;
+    padding-right: 15px;
+    transform: translate(300px, 0);
+    transition: all 0.6s;
+}
+
+.campaignimg2 .camp_box2 .line {
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+.camp_box2 h3 {
+    font-size: 1.8rem;
+}
+
+.camp_box2 p {
+    font-size: 1.4rem;
+    padding-top: 10px;
+}
+
+/* 호버 효과 - 이미지3  */
+.campaignimg3:hover div {
+    transform: translate(0, 0)
+}
+
+.campaignimg3 .camp_box3 {
+    width: 279px;
+    height: 340px;
+    position: absolute;
+    top: 0px;
+    color: #fff;
+    background: rgba(218, 40, 31, 0.5);
+    padding-top: 85%;
+    padding-left: 15px;
+    transform: translate(300px, 0);
+    transition: all 0.6s;
+}
+
+.campaignimg3 .camp_box3 .line {
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+.camp_box3 h3 {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.camp_box3 p {
+    font-size: 1.4rem;
+    padding-top: 10px;
+    color: #fff;
+}
+
+/* 호버 효과 - 이미지4  */
+.campaignimg4:hover div {
+    transform: translate(0, 0)
+}
+
+.campaignimg4 .camp_box4 {
+    width: 279px;
+    height: 340px;
+    position: absolute;
+    top: 0px;
+    color: #fff;
+    background: rgba(218, 40, 31, 0.5);
+    padding-top: 85%;
+    padding-left: 15px;
+    transform: translate(300px, 0);
+    transition: all 0.6s;
+}
+
+.campaignimg4 .camp_box4 .line {
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+.camp_box4 h3 {
+    font-size: 1.8rem;
+}
+
+.camp_box4 p {
+    font-size: 1.4rem;
+    padding-top: 10px;
+}
+
+
+/* 후원으로 만드는 변화 */
+#donate {
+    width: 100%;
+    height: 480px;
+    background: #f0f0f0;
+}
+
+#donate .donatetxt {
+    text-align: center;
+    padding-top: 80px;
+}
+
+#donate .donatetxt h2 {
+    font-size: 3rem
+}
+
+#donate .donatetxt p {
+    font-size: 1.6rem;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+#donate .donatelist {
+    margin-top: 40px;
+}
+
+#donate .donatelist ul li {
+    float: left;
+    padding-left: 38px;
+}
+
+#donate .donatelist ul li > a {
+    position: relative
+}
+
+/* 후원 아이콘 호버 효과1*/
+#donate .donatelist ul li > a:nth-child(1) {
+    width: 158px;
+    height: 158px;
+    background-image: url(../images/icon1.png)
+}
+
+#donate .donatelist ul li > a:nth-child(1):hover {
+    width: 158px;
+    height: 158px;
+    background-image: url(../images/icon1_h.png)
+}
+
+/* 후원 아이콘 호버 효과2*/
+#donate .donatelist ul li:nth-child(2) > a {
+    width: 158px;
+    height: 158px;
+    background-image: url(../images/icon2.png)
+}
+
+#donate .donatelist ul li:nth-child(2) > a:hover {
+    width: 158px;
+    height: 158px;
+    background-image: url(../images/icon2_h.png)
+}
+
+/* 후원 아이콘 호버 효과3*/
+#donate .donatelist ul li:nth-child(3) > a {
+    width: 158px;
+    height: 158px;
+    background-image: url(../images/icon3.png)
+}
+
+#donate .donatelist ul li:nth-child(3):hover > a {
+    width: 158px;
+    height: 158px;
+    background-image: url(../images/icon3_h.png)
+}
+
+/* 후원 아이콘 호버 효과4*/
+#donate .donatelist ul li:nth-child(4) > a {
+    width: 158px;
+    height: 158px;
+    background-image: url(../images/icon4.png)
+}
+
+#donate .donatelist ul li:nth-child(4):hover > a {
+    width: 158px;
+    height: 158px;
+    background-image: url(../images/icon4_h.png)
+}
+
+/* 후원 아이콘 호버 효과5*/
+#donate .donatelist ul li:nth-child(5) > a {
+    width: 158px;
+    height: 158px;
+    background-image: url(../images/icon5.png)
+}
+
+#donate .donatelist ul li:nth-child(5):hover > a {
+    width: 158px;
+    height: 158px;
+    background-image: url(../images/icon5_h.png)
+}
+
+/* 후원 아이콘 호버 효과6*/
+#donate .donatelist ul li:nth-child(6) > a {
+    width: 158px;
+    height: 158px;
+    background-image: url(../images/icon6.png)
+}
+
+#donate .donatelist ul li:nth-child(6):hover > a {
+    width: 158px;
+    height: 158px;
+    background-image: url(../images/icon6_h.png)
+}
+
+#donate .donatelist ul li:first-child {
+    padding-left: 12px
+}
+
+.donatelist ul li h3 {
+    font-size: ;
+    margin-top: 30px;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+
+
+/* 투명성 배너 */
+#effort {
+    width: 100%;
+    height: 160px;
+    background-image: url(../images/effort_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#effort > .inner > h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    padding-top: 30px;
+}
+
+.prizelist {
+    padding-left: 40px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.prizelist .prizeslide {}
+
+.prizelist .prizeslide li {
+    float: left;
+    width: 32%;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+
+}
+
+.prizelist .prizeslide li img {
+    float: left
+}
+
+.prizelist .prizeslide li p {
+    display: inline-block;
+}
+
+
+
+/* 나눔 이야기*/
+#story {
+    height: 925px;
+    position: relative
+}
+
+#story .prev_btn {
+    position: absolute;
+    top: 40%;
+    left: 2%;
+}
+
+#story .next_btn {
+    position: absolute;
+    top: 40%;
+    right: 2%;
+}
+
+#story h2 {
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 90px;
+}
+
+#story .storylist {
+    width: 383px;
+    height: 550px;
+    float: left;
+    padding: 0 8px;
+    margin-top: 70px;
+
+
+}
+
+#story .storylist h3 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-left: 4px;
+    margin-bottom: 45px;
+}
+
+#story .storylist:nth-child(2) h3 {
+    margin-bottom: 24px;
+}
+
+#story .storylist p {
+    font-size: 1.5rem;
+    line-height: 22px;
+    margin-left: 4px;
+}
+
+#story .storylist h4 {
+    font-size: 1.4rem;
+    margin-top: 35px;
+    margin-left: 4px;
+}
+
+#story .storylist .under_bar {
+    margin-top: 25px;
+}
+
+.dot_bar {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.dot_bar > ul > li {
+    float: left;
+    padding: 7px;
+    margin-top: 50px;
+}
+
+
+/* 배너 사진 */
+#banner {
+    width: 100%;
+    height: 504px;
+    background-image: url(../images/banner.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* 내정보 save */
+#save_banner {
+    height: 202px;
+    background-image: url(../images/bannerimg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* 소식 */
+/* 공지사항 */
+#notice {
+    width: 100%;
+    height: 481px;
+}
+
+#notice h2 {
+    font-size: 3rem;
+    padding-top: 80px;
+    text-align: center;
+}
+
+#notice > .inner > .notice_box {
+    width: 570px;
+    height: 238px;
+    background: #fff;
+    border-top: 5px solid #da281f;
+    box-shadow: 2px 0 8px rgba(0, 1, 1, 0.09);
+    float: left;
+    margin-top: 50px;
+    position: relative;
+
+}
+
+#notice > .inner > .notice_box h3 {
+    font-size: 2rem;
+    margin-top: 28px;
+    margin-bottom: 30px;
+    margin-left: 14px;
+}
+
+#notice > .inner > .notice_box ul li {
+    font-size: 1.4rem;
+    width: 540px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+    margin-left: 14px;
+    padding-bottom: 10px;
+    overflow: hidden;
+
+}
+
+#notice > .inner > .notice_box ul li:last-child {
+    border-bottom: 0;
+}
+
+#notice > .inner > .notice_box ul li span {
+    float: right;
+}
+
+#notice > .inner > .notice_box .plus_btn {
+    position: absolute;
+    top: 28px;
+    right: 14px;
+}
+
+/* 언론보도 */
+#notice > .inner > .news_box {
+    width: 570px;
+    height: 238px;
+    background: #fff;
+    border-top: 5px solid #da281f;
+    box-shadow: 2px 0 8px rgba(0, 1, 1, 0.09);
+    float: right;
+    margin-top: 50px;
+    position: relative;
+}
+
+#notice > .inner > .news_box h3 {
+    font-size: 2rem;
+    margin-top: 28px;
+    margin-bottom: 30px;
+    margin-left: 14px;
+}
+
+#notice > .inner > .news_box ul li {
+    font-size: 1.4rem;
+    width: 540px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+    margin-left: 14px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+#notice > .inner > .news_box ul li:last-child {
+    border-bottom: 0;
+}
+
+#notice > .inner > .news_box ul li span {
+    float: right;
+}
+
+#notice > .inner > .news_box .plus_btn {
+    position: absolute;
+    top: 28px;
+    right: 14px;
+}
+
+/* 하단 */
+#footer {
+    width: 100%;
+    height: 334px;
+    background-color: #3e3e40;
+    clear: both;
+}
+
+#footer_t {
+    width: 100%;
+    height: 85px;
+    border-bottom: 1px solid #ccc;
+}
+
+#footer_t .inner ul {
+    float: left;
+}
+
+#footer_t .inner ul li {
+    float: left;
+    padding: 0 10px;
+    line-height: 85px;
+    font-weight: bold;
+}
+
+#footer_t .inner ul li a {
+    color: #bfc7ce;
+    font-size: 1.6rem;
+}
+
+#footer_t .inner ul li a:hover {
+    color: #fff;
+}
+
+#footer_t .inner .site {
+    float: right;
+    width: 410px;
+    height: 85px;
+    margin-top: 20px;
+}
+
+#footer_t .inner .globalsite {
+    float: left;
+    padding-left: 30px;
+
+}
+
+#footer_t .inner .globalsite select {
+    width: 175px;
+    height: 42px;
+    display: block;
+    border: none;
+    background: #f3f3f3;
+}
+
+#footer_t .inner .familysite {
+    float: left;
+    padding-left: 30px;
+
+}
+
+#footer_t .inner .familysite select {
+    width: 175px;
+    height: 42px;
+    display: block;
+    border: none;
+    background: #f3f3f3;
+}
+
+#footer_b .inner .footer_l {
+    float: left;
+}
+
+#footer_b .inner .info {
+    margin-top: 20px;
+
+}
+
+#footer_b .inner .info li {
+    font-size: 1.5rem;
+    height: 40px;
+    line-height: 40px;
+    color: #bfc7ce;
+
+}
+
+#footer_b .inner .copy {
+    color: #bfc7ce;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    font-weight: 300;
+}
+
+#footer_b .inner .footer_r {
+    float: right;
+}
+
+#footer_b .inner .footer_r .sns {
+    margin-top: 20px;
+}
+
+#footer_b .inner .sns li {
+    float: left;
+    padding-left: 20px;
+}
+
+#footer_b .site {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 태블릿 버전 */
+@media (max-width:1279px) {
+    #sidebar {
+        right: 5%;
+    }
+
+    #sidebar img {
+        width: 70%;
+        float: right;
+
+
+    }
+
+    #header {
+        width: 100%;
+        height: auto
+    }
+
+    #header_t {
+        display: none
+    }
+
+    .inner {
+        width: 98%
+    }
+
+    #header_b > .inner > .logo img {
+        width: 70%;
+        height: 70%;
+        margin-top: 20px;
+    }
+
+    #header_b > .inner > .nav {
+        display: none
+    }
+
+    #header_b > .inner > .donate_btn {
+        display: none;
+    }
+
+    #header_b > .inner > .donate_btn > a {
+        font-size: 1.3rem;
+    }
+
+    
+/* 태블릿 햄버거 버튼 */
+
+    .gnbWrap {
+        padding-top: 10px;
+        padding-bottom: 8px;
+        width: 890px;
+        margin: 0 auto;
+    }
+
+    .gnbWrap > img {
+        width: 250px;
+        height: 42px;
+    }
+
+    /* 모바일 메뉴 버튼 */
+    .menu {
+        position: absolute;
+        top: 10%;
+        right: 1%;
+        transform: translateY(-50%);
+        display: block;
+         margin-top: 30px;
+    }
+
+    .menu > a {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    a.close {
+        background-color: #333;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #fff;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .left_gnbWrap {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        right: -200px;
+        top: 0;
+        background-color: #fff;
+        padding-top: 50px;
+        z-index: 999;
+        transition: all 0.3s;
+        display: block;
+    }
+
+    .left_gnbWrap.on {
+        right: 0;
+    }
+
+    .left_gnb > li {
+        width: 100%;
+    }
+
+    .left_gnb > li > a {
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        width: 100%;
+        height: 50px;
+        background-color: #da281f;
+        color: #fff;
+        font-size: 1.4em;
+    }
+
+    .left_gnb > li > a.on {
+        background-color:  #f5545a;
+    }
+
+    .left_gnb > li > ul {
+        display: none;
+    }
+
+    .left_gnb > li > ul > li > a {
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        width: 100%;
+        height: 50px;
+        background-color: #fee1db;
+        color: black;
+        font-size: 1.2em;
+    }
+    .left_gnb > li > ul > li > a:hover{
+        background-color: #f77c7e;
+        color: #fff;
+    }
+
+
+    #mainimg {
+        background-image: url(../images/mo_main.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-top: calc(945/768*100%);
+        height: 0;
+        border-top: 5px solid #da281f;
+        margin-top: 76px;
+    }
+
+    .slidelist {
+        display: none;
+    }
+
+    #mainimg .slide1 img {
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    #mainimg .prev_btn img {
+        width: 80%;
+        height: 80%;
+    }
+
+    #mainimg .next_btn img {
+        width: 80%;
+        height: 80%;
+    }
+
+    #contents {
+        padding-top: 0
+    }
+
+    /* 후원 캠페인 */
+    #campaign .campaignlist {
+        width: 100%;
+    }
+
+    .campaignimg1 {
+        margin: 50px auto;
+        float: revert;
+    }
+
+    .campaignimg2,
+    .campaignimg3,
+    .campaignimg4 {
+        display: none;
+    }
+
+    /* 후원으로 만드는 변화*/
+    #donate {
+        height: 1042px;
+    }
+
+    #donate .donatelist ul {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #donate .donatelist ul li {
+        width: 40%;
+        padding-bottom: 20px;
+    }
+
+    #donate .donatelist ul li:first-child {
+        padding-left: 38px;
+    }
+
+    #donate .donatelist ul li > a:nth-child(1) {}
+
+    .donatelist ul li h3 {
+        margin-top: 10px;
+    }
+
+
+    /* 투명성 배너 */
+    #effort {
+        height: 0;
+        background-image: url(../images/mo_effortbg.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding-top: calc(218/768*100%);
+    }
+
+    /*세이브더 칠드런 소식 */
+
+    #story .storyslide {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 35px;
+    }
+
+    #story .storylist {
+        width: 50%;
+        margin: 0 auto;
+        float: revert;
+    }
+
+    #story .storylist:first-child img {
+        width: 100%;
+    }
+
+    #story .storylist:nth-child(2) {
+        display: none;
+    }
+
+    #story .storylist:nth-child(3) {
+        display: none;
+    }
+
+    .dot_bar {
+        width: 25%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    /* 아이들 배너 사진 */
+    #banner {
+        background-image: url(../images/mo_banner.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-top: calc(278/768*100%);
+        height: 0;
+    }
+
+    /* 내 정보 save 하자 */
+    #save_banner {
+        background-image: url(../images/mo_savebanner.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding-top: calc(235/768*100%);
+        height: 0;
+    }
+
+    #save_banner h2 {
+        font-size: 2rem;
+    }
+
+    #save_banner h3 {
+        font-size: 1.5rem;
+    }
+
+    /*  세이브더칠드런 소식   */
+    #notice {
+        height: 789px;
+    }
+
+    #notice > .inner > .notice_box {
+        width: 100%;
+    }
+
+    #notice > .inner > .notice_box ul li {
+        width: 95%;
+        font-size: 1.1rem;
+    }
+
+    #notice > .inner > .news_box {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #notice > .inner > .news_box ul li {
+        width: 95%;
+        font-size: 1.1rem;
+    }
+
+
+    /* 하단 */
+    #footer {
+        height: 397px;
+    }
+
+    #footer_t {
+        display: none;
+    }
+
+    #footer_b .inner .footer_l {
+        float: none;
+        text-align: center;
+    }
+
+    #footer_b .inner .footer_r {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    #footer_b .inner .footer_r .sns {
+        float: none;
+    }
+
+    #footer_b .inner .info li {
+        font-size: 1.1rem;
+    }
+
+    #footer_b .inner .copy {
+        font-size: 1.1rem;
+    }
+
+    #footer_b .site {
+        display: block;
+        padding-top: 15px;
+    }
+
+    #footer_b .inner .site .globalsite select {
+        width: 100%;
+        height: 42px;
+        font-size: 1.5rem;
+        background-color: #3e3e40;
+        color: #bfc7ce;
+
+    }
+
+    #footer_b .inner .site .familysite select {
+        width: 100%;
+        height: 42px;
+        line-height: 42px;
+        font-size: 1.5rem;
+        background-color: #3e3e40;
+        color: #bfc7ce;
+        text-align: center;
+    }
+
+
+}
+
+/* 모바일 버전 */
+
+@media (max-width:768px) {
+    #sidebar {
+        right: 5%;
+    }
+
+    #sidebar img {
+        width: 50%;
+        float: right;
+
+    }
+
+    #header {
+        width: 100%;
+        height: auto
+    }
+
+    #header_t {
+        display: none
+    }
+
+    .inner {
+        width: 98%
+    }
+
+    #header_b > .inner > .logo img {
+        width: 70%;
+        height: 70%;
+        margin-top: 20px;
+    }
+
+    #header_b > .inner > .nav {
+        display: none
+    }
+
+    #header_b > .inner > .donate_btn {
+        display: none;
+    }
+
+    #header_b > .inner > .donate_btn > a {
+        font-size: 1.3rem;
+    }
+
+    
+    
+    /* 태블릿 햄버거 버튼 */
+
+    .gnbWrap {
+        padding-top: 10px;
+        padding-bottom: 8px;
+        width: 890px;
+        margin: 0 auto;
+    }
+
+    .gnbWrap > img {
+        width: 250px;
+        height: 42px;
+    }
+
+    .menu {
+        position: absolute;
+        top: 10%;
+        right: 1%;
+        transform: translateY(-50%);
+        display: block;
+         margin-top: 30px;
+    }
+
+    .menu > a {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    a.close {
+        background-color: #333;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #fff;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .left_gnbWrap {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        right: -200px;
+        top: 0;
+        background-color: #fff;
+        padding-top: 50px;
+        z-index: 999;
+        transition: all 0.3s;
+        display: block;
+    }
+
+    .left_gnbWrap.on {
+        right: 0;
+    }
+
+    .left_gnb > li {
+        width: 100%;
+    }
+
+    .left_gnb > li > a {
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        width: 100%;
+        height: 50px;
+        background-color: #da281f;
+        color: #fff;
+        font-size: 1.4em;
+    }
+
+    .left_gnb > li > a.on {
+        background-color:  #f5545a;
+    }
+
+    .left_gnb > li > ul {
+        display: none;
+    }
+
+    .left_gnb > li > ul > li > a {
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        width: 100%;
+        height: 50px;
+        background-color: #fee1db;
+        color: black;
+        font-size: 1.2em;
+    }
+    .left_gnb > li > ul > li > a:hover{
+        background-color: #f77c7e;
+        color: #fff;
+    }
+
+
+    #mainimg {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        position: relative;
+        background-image: url(../images/mo_main.jpg);
+        background-size: cover;
+        padding-top: calc(945/768*100%);
+        margin-top: 76px;
+        border-top: 5px solid #da281f;
+    }
+
+    #mainimg .slidelist img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    #mainimg .prev_btn img {
+        width: 80%;
+        height: 80%;
+    }
+
+    #mainimg .next_btn img {
+        width: 80%;
+        height: 80%;
+    }
+
+    #mainimg .playlist {
+        bottom: 10%;
+    }
+
+
+    /* 후원 캠페인 */
+    #campaign .campaignlist {
+        width: 100%;
+    }
+
+    .campaignimg1 {
+        margin: 50px auto;
+        float: revert;
+    }
+
+    .campaignimg2,
+    .campaignimg3,
+    .campaignimg4 {
+        display: none;
+    }
+
+    /* 후원으로 만드는 변화*/
+    #donate {
+        height: 1042px;
+    }
+
+    #donate .donatelist ul {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #donate .donatelist ul li {
+        width: 40%;
+        padding-bottom: 20px;
+    }
+
+    #donate .donatelist ul li:first-child {
+        padding-left: 38px;
+    }
+
+    #donate .donatelist ul li > a:nth-child(1) {}
+
+    .donatelist ul li h3 {
+        margin-top: 10px;
+    }
+
+
+    /* 투명성 배너 */
+    #effort {
+        height: 0;
+        background-image: url(../images/mo_effortbg.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding-top: calc(218/768*100%);
+    }
+
+    /*세이브더 칠드런 소식 */
+
+    #story .storyslide {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 35px;
+    }
+
+    #story .storylist {
+        width: 50%;
+        margin: 0 auto;
+        float: revert;
+    }
+
+    #story .storylist:first-child img {
+        width: 100%;
+    }
+
+    #story .storylist:nth-child(2) {
+        display: none;
+    }
+
+    #story .storylist:nth-child(3) {
+        display: none;
+    }
+
+    .dot_bar {
+        width: 190px;
+    }
+
+    /* 아이들 배너 사진 */
+    #banner {
+        background-image: url(../images/mo_banner.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-top: calc(278/768*100%);
+        height: 0;
+    }
+
+    /* 내 정보 save 하자 */
+    #save_banner {
+        background-image: url(../images/mo_savebanner.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding-top: calc(235/768*100%);
+        height: 0;
+    }
+
+    #save_banner h2 {
+        font-size: 2rem;
+    }
+
+    #save_banner h3 {
+        font-size: 1.5rem;
+    }
+
+    /*  세이브더칠드런 소식   */
+    #notice {
+        height: 789px;
+    }
+
+    #notice > .inner > .notice_box {
+        width: 100%;
+    }
+
+    #notice > .inner > .notice_box ul li {
+        width: 95%;
+        font-size: 1.1rem;
+    }
+
+    #notice > .inner > .news_box {
+        width: 100%;
+    }
+
+    #notice > .inner > .news_box ul li {
+        width: 95%;
+        font-size: 1.1rem;
+    }
+
+
+    /* 하단 */
+    #footer {
+        height: 397px;
+    }
+
+    #footer_t {
+        display: none;
+    }
+
+    #footer_b .inner .footer_l {
+        float: none;
+        text-align: center;
+    }
+
+    #footer_b .inner .footer_r .sns {
+        float: none;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 20px;
+
+    }
+
+    #footer_b .inner .footer_r .sns li {
+        width: 30px;
+        height: 30px;
+        padding-left: 10px;
+        margin: 0 auto;
+    }
+
+    #footer_b .inner .sns li:first-child {
+        padding-left: 0;
+    }
+
+    #footer_b .inner .footer_r .sns img {
+        width: 100%;
+        text-align: center;
+    }
+
+    #footer_b .inner .info li {
+        font-size: 1.1rem;
+    }
+
+    #footer_b .inner .copy {
+        font-size: 1.1rem;
+    }
+
+    #footer_b .site {
+        display: block;
+        padding-top: 15px;
+    }
+
+    #footer_b .inner .site .globalsite select {
+        width: 100%;
+        height: 42px;
+        font-size: 1.5rem;
+        background-color: #3e3e40;
+        color: #bfc7ce;
+
+
+    }
+
+    #footer_b .globalsite option {
+        text-align: center;
+    }
+
+    #footer_b .familysite option {
+        text-align: center;
+    }
+
+    #footer_b .inner .site .familysite select {
+        width: 100%;
+        height: 42px;
+        font-size: 1.5rem;
+        background-color: #3e3e40;
+        color: #bfc7ce;
+    }
+}
