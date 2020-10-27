@@ -194,7 +194,7 @@ html {
 /* 메인이미지*/
 #mainimg {
     width: 100%;
-    height: 583px;
+    height: 580px;
     overflow: hidden;
     position: relative;
     padding-top: 112px;
@@ -202,6 +202,7 @@ html {
 
 #mainimg img {
     width: 100%;
+    overflow: hidden;
 }
 
 #mainimg .prev_btn {
@@ -216,31 +217,9 @@ html {
     right: 2%
 }
 
-
-/* 모바일 메인이미지 */
-
-.slide2 {
-    display: none;
+.slidelist{
+    overflow: hidden;
 }
-
-/* 메인이미지 플레이버튼 */
-.playlist {
-    position: absolute;
-    bottom: 30%;
-    left: 45%;
-}
-
-.playlist ul li {
-    float: left;
-    padding: 5px;
-    opacity: 0.6;
-}
-
-playlist ul li a :hover {
-    opacity: 0;
-}
-
-
 
 
 /* 컨텐츠 */
@@ -468,6 +447,7 @@ playlist ul li a :hover {
 #donate .donatelist ul li {
     float: left;
     padding-left: 38px;
+    text-align: -webkit-center;
 }
 
 #donate .donatelist ul li > a {
@@ -966,11 +946,6 @@ playlist ul li a :hover {
         display: none;
     }
 
-    #header_b > .inner > .donate_btn > a {
-        font-size: 1.3rem;
-    }
-
-    
 /* 태블릿 햄버거 버튼 */
 
     .gnbWrap {
@@ -1139,8 +1114,6 @@ playlist ul li a :hover {
     #donate .donatelist ul li:first-child {
         padding-left: 38px;
     }
-
-    #donate .donatelist ul li > a:nth-child(1) {}
 
     .donatelist ul li h3 {
         margin-top: 10px;
@@ -1338,11 +1311,14 @@ playlist ul li a :hover {
     }
 
     #header_b > .inner > .donate_btn {
-        display: none;
+        margin-right: 50px;
+      
     }
 
     #header_b > .inner > .donate_btn > a {
-        font-size: 1.3rem;
+       
+        font-size: 1.2rem;
+       
     }
 
     
@@ -1505,16 +1481,22 @@ playlist ul li a :hover {
     }
 
     #donate .donatelist ul li {
-        width: 40%;
-        padding-bottom: 20px;
+        width: 130px;
+        height: 130px;
+        background-size: contain;
+        padding-bottom: 100px;
+        padding-right
+
     }
 
     #donate .donatelist ul li:first-child {
         padding-left: 38px;
     }
-
-    #donate .donatelist ul li > a:nth-child(1) {}
-
+    #donate .donatelist ul li > a{
+        width: 100px;
+        height: 100px;
+        background-size: cover;
+    }
     .donatelist ul li h3 {
         margin-top: 10px;
     }
